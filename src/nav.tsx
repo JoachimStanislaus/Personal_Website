@@ -14,6 +14,8 @@ import {
     Stack,
     Button,
     Link,
+    Avatar,
+    useColorModeValue,
 } from '@chakra-ui/react'
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 
@@ -23,7 +25,7 @@ export default function Nav() {
     const { colorMode, toggleColorMode } = useColorMode();
     return (
         <Flex
-            // bg={useColorModeValue("gray.100", "gray.900")}
+            bg={useColorModeValue("gray.100", "gray.900")}
             px={4}
             h={16}
             // boxShadow={scroll ? "base" : "none"}
@@ -35,7 +37,7 @@ export default function Nav() {
             w="100%"
         >
             <Link >
-                test
+            <Avatar name="Joachim Stanislaus" bg={useColorModeValue("gray.300","gray.700")} color={useColorModeValue("gray.700", "gray.300" )} />
             </Link>
 
             <Flex alignItems={"center"}>

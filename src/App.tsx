@@ -10,7 +10,7 @@ function App() {
   return (
     <ChakraProvider>
       <Nav></Nav>
-      Hello World! 
+      
     </ChakraProvider>
   )
 }
