@@ -7,14 +7,9 @@ import {
   HStack,
 } from "@chakra-ui/react";
 
-interface HeaderProps {
-  color: string;
-  count: string;
-  subheader: string;
-  content: React.ReactNode;
-}
+import { ContentItemProps } from "../types/content";
 
-export default function About({ color,count,subheader,content }: HeaderProps) {
+export default function ContentItem({ color,count,subheader,content }: ContentItemProps) {
   return (
     <>
       <Container maxW={"3xl"} id={subheader}>
@@ -33,9 +28,10 @@ export default function About({ color,count,subheader,content }: HeaderProps) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-          <Text color={"gray.600"} fontSize={"xl"} px={4}>
+          {content}
+          {/* <Text color={"gray.600"} fontSize={"xl"} px={4}>
             {content}
-          </Text>
+          </Text> */}
         </Stack>
       </Container>
     </>
