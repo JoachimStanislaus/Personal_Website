@@ -36,7 +36,7 @@ export default function Contact({ color }: HeaderProps) {
                     <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
                         <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
                         <Text color={"gray.600"} fontSize={"xl"} px={4}>
-                            Some text
+                        I'd love to hear what I can help you with! 
                         </Text>
                         <Text color={`${color}.500`} fontWeight={600} fontSize={"lg"} px={4}>
                             hello@joachimstanislaus.com

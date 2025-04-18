@@ -7,7 +7,7 @@ import {
     themeQuartz, 
 } from "ag-grid-community";
 import { useState, useEffect } from 'react';
-import { useColorMode } from '@chakra-ui/react';
+import { Button, useColorMode } from '@chakra-ui/react';
 import { parseTimeline } from '../utils/time';
 
 ModuleRegistry.registerModules([AllCommunityModule]);
@@ -58,7 +58,20 @@ const ExperienceGrid = () => {
 
     return (
         // Data Grid will fill the size of the parent container
+        
         <div style={{ height: 500 }}>
+            <div style={{height:50, display: "flex", justifyContent: "flex-end" }}>
+            <Button
+            onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/assets/JoachimTan_Resume.pdf"; // public folder path
+                link.download = "JoachimTan_Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >Export Resume</Button>
+            </div>
             <AgGridReact
                 theme={color}
                 rowData={rowData}

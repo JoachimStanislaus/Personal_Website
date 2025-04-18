@@ -59,7 +59,7 @@ export default function Header({ color }: HeaderProps) {
                         color={"gray.500"}
                         fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
                     >
-                        short desc
+                        Coding empowers me to build things i want to see in this world!
                     </Text>
                     <Stack
                         direction={"column"}
