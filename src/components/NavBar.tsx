@@ -21,11 +21,11 @@ export default function Nav() {
 
     const scrollToAbout = () => {
         const aboutSection = document.querySelector("#About");
-        aboutSection.scrollIntoView({ behavior: "smooth", block: "end" });
+        aboutSection?.scrollIntoView({ behavior: "smooth", block: "end" });
     };
     const scrollToExperience = () => {
         const experienceSection = document.querySelector("#Experience");
-        experienceSection.scrollIntoView({ behavior: "smooth", block: "end" });
+        experienceSection?.scrollIntoView({ behavior: "smooth", block: "end" });
     };
     // const scrollToProjects = () => {
     //     const projectsSection = document.querySelector("#Projects");
@@ -33,11 +33,11 @@ export default function Nav() {
     // };
     const scrollToContact = () => {
         const contactSection = document.querySelector("#Contact");
-        contactSection.scrollIntoView({ behavior: "smooth" });
+        contactSection?.scrollIntoView({ behavior: "smooth" });
     };
     const scrollToHero = () => {
         const heroSection = document.querySelector("#hero");
-        heroSection.scrollIntoView({ behavior: "smooth" });
+        heroSection?.scrollIntoView({ behavior: "smooth" });
     };
 
     return (

@@ -25,9 +25,9 @@ export default function Header({ color }: HeaderProps) {
     };
     const scrollToContact = () => {
         const contactSection = document.querySelector("#Contact");
-        contactSection.scrollIntoView({ behavior: "smooth" });
-      };
-      
+        contactSection?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <>
             <Heading>
@@ -84,7 +84,7 @@ export default function Header({ color }: HeaderProps) {
                             variant={"link"}
                             colorScheme={"blue"}
                             size={"sm"}
-                        onClick={scrollToContact}
+                            onClick={scrollToContact}
                         >
                             Contact Me
                         </Button>

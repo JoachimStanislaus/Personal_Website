@@ -1,5 +1,4 @@
 import {
-    Divider,
     Stack,
     Text,
     Container,
