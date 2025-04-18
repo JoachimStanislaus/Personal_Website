@@ -18,6 +18,28 @@ import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 export default function Nav() {
     const [isLargerThanMD] = useMediaQuery("(min-width: 48em)");
     const { colorMode, toggleColorMode } = useColorMode();
+
+    const scrollToAbout = () => {
+        const aboutSection = document.querySelector("#About");
+        aboutSection.scrollIntoView({ behavior: "smooth", block: "end" });
+    };
+    const scrollToExperience = () => {
+        const experienceSection = document.querySelector("#Experience");
+        experienceSection.scrollIntoView({ behavior: "smooth", block: "end" });
+    };
+    const scrollToProjects = () => {
+        const projectsSection = document.querySelector("#Projects");
+        projectsSection.scrollIntoView({ behavior: "smooth", block: "end" });
+    };
+    const scrollToContact = () => {
+        const contactSection = document.querySelector("#Contact");
+        contactSection.scrollIntoView({ behavior: "smooth" });
+    };
+    const scrollToHero = () => {
+        const heroSection = document.querySelector("#hero");
+        heroSection.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <Flex
             bg={useColorModeValue("gray.100", "gray.900")}
@@ -31,24 +53,24 @@ export default function Nav() {
             justifyContent={"space-between"}
             w="100%"
         >
-            <Link >
-            <Avatar name="Joachim Stanislaus" bg={useColorModeValue("gray.300","gray.700")} color={useColorModeValue("gray.700", "gray.300" )} />
+            <Link onClick={scrollToHero}>
+                <Avatar name="Joachim Stanislaus" bg={useColorModeValue("gray.300", "gray.700")} color={useColorModeValue("gray.700", "gray.300")} />
             </Link>
 
             <Flex alignItems={"center"}>
                 <Stack direction={"row"} spacing={7}>
                     {isLargerThanMD ? (
                         <>
-                            <Button variant="ghost">
+                            <Button variant="ghost" onClick={scrollToAbout}>
                                 About
                             </Button>
-                            <Button variant="ghost">
+                            <Button variant="ghost" onClick={scrollToExperience}>
                                 Experience
                             </Button>
-                            <Button variant="ghost" >
+                            <Button variant="ghost" onClick={scrollToProjects}>
                                 Projects
                             </Button>
-                            <Button variant="ghost" >
+                            <Button variant="ghost" onClick={scrollToContact}>
                                 Contact
                             </Button>
                         </>
@@ -62,16 +84,16 @@ export default function Nav() {
                                     variant='outline'
                                 />
                                 <MenuList>
-                                    <MenuItem icon={<HamburgerIcon />} command='⌘T'>
-                                    About
+                                    <MenuItem icon={<HamburgerIcon />} onClick={scrollToAbout}>
+                                        About
                                     </MenuItem>
-                                    <MenuItem icon={<HamburgerIcon />} command='⌘N'>
+                                    <MenuItem icon={<HamburgerIcon />} onClick={scrollToExperience}>
                                         Experience
                                     </MenuItem>
-                                    <MenuItem icon={<HamburgerIcon />} command='⌘⇧N'>
+                                    <MenuItem icon={<HamburgerIcon />} onClick={scrollToProjects}>
                                         Projects
                                     </MenuItem>
-                                    <MenuItem icon={<HamburgerIcon />} command='⌘O'>
+                                    <MenuItem icon={<HamburgerIcon />} onClick={scrollToContact}>
                                         Contact
                                     </MenuItem>
                                 </MenuList>
