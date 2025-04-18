@@ -54,7 +54,7 @@ export default function Nav() {
             w="100%"
         >
             <Link onClick={scrollToHero}>
-                <Avatar src='/public/assets/mf-avatar.svg' />
+                <Avatar src='/assets/mf-avatar.svg' />
             </Link>
 
             <Flex alignItems={"center"}>
