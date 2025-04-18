@@ -29,9 +29,6 @@ export default function ContentItem({ color,count,subheader,content }: ContentIt
             <Divider orientation="horizontal" />
           </Stack>
           {content}
-          {/* <Text color={"gray.600"} fontSize={"xl"} px={4}>
-            {content}
-          </Text> */}
         </Stack>
       </Container>
     </>
