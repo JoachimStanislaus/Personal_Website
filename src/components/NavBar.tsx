@@ -54,7 +54,7 @@ export default function Nav() {
             w="100%"
         >
             <Link onClick={scrollToHero}>
-                <Avatar name="Joachim Stanislaus" bg={useColorModeValue("gray.300", "gray.700")} color={useColorModeValue("gray.700", "gray.300")} />
+                <Avatar src='/public/assets/mf-avatar.svg' />
             </Link>
 
             <Flex alignItems={"center"}>
