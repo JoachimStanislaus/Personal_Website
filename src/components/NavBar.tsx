@@ -67,9 +67,9 @@ export default function Nav() {
                             <Button variant="ghost" onClick={scrollToExperience}>
                                 Experience
                             </Button>
-                            <Button variant="ghost" onClick={scrollToProjects}>
+                            {/* <Button variant="ghost" onClick={scrollToProjects}>
                                 Projects
-                            </Button>
+                            </Button> */}
                             <Button variant="ghost" onClick={scrollToContact}>
                                 Contact
                             </Button>
@@ -84,16 +84,16 @@ export default function Nav() {
                                     variant='outline'
                                 />
                                 <MenuList>
-                                    <MenuItem icon={<HamburgerIcon />} onClick={scrollToAbout}>
+                                    <MenuItem onClick={scrollToAbout}>
                                         About
                                     </MenuItem>
-                                    <MenuItem icon={<HamburgerIcon />} onClick={scrollToExperience}>
+                                    <MenuItem onClick={scrollToExperience}>
                                         Experience
                                     </MenuItem>
-                                    <MenuItem icon={<HamburgerIcon />} onClick={scrollToProjects}>
+                                    {/* <MenuItem onClick={scrollToProjects}>
                                         Projects
-                                    </MenuItem>
-                                    <MenuItem icon={<HamburgerIcon />} onClick={scrollToContact}>
+                                    </MenuItem> */}
+                                    <MenuItem onClick={scrollToContact}>
                                         Contact
                                     </MenuItem>
                                 </MenuList>
