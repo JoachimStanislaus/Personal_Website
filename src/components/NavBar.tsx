@@ -27,10 +27,10 @@ export default function Nav() {
         const experienceSection = document.querySelector("#Experience");
         experienceSection.scrollIntoView({ behavior: "smooth", block: "end" });
     };
-    const scrollToProjects = () => {
-        const projectsSection = document.querySelector("#Projects");
-        projectsSection.scrollIntoView({ behavior: "smooth", block: "end" });
-    };
+    // const scrollToProjects = () => {
+    //     const projectsSection = document.querySelector("#Projects");
+    //     projectsSection.scrollIntoView({ behavior: "smooth", block: "end" });
+    // };
     const scrollToContact = () => {
         const contactSection = document.querySelector("#Contact");
         contactSection.scrollIntoView({ behavior: "smooth" });
