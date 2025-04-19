@@ -31,6 +31,7 @@ const ExperienceGrid = () => {
         { company: "UBS", role: "Frontend Developer", timeline: "Sept 24 - Present" },
         { company: "Hatless Studios", role: "Backend Developer", timeline: "Apr 23 - Aug 24" },
         { company: "UBS", role: "Frontend Developer Intern", timeline: "Jun 23 - Aug 23" },
+        { company: "SG Enable", role:"Data Analyst", timeline: "May 22 - Sept 22"},
     ]);
 
     // Column Definitions: Defines the columns to be displayed.
