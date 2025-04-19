@@ -18,7 +18,7 @@ export default function Header({ color }: HeaderProps) {
 
     const linkedin = () => {
         window.open(
-            "https:/www.linkedin.com/in/joachimstanislaus",
+            "https://www.linkedin.com/in/joachimstanislaus",
             "_blank",
             "noreferrer,noopener"
         );
