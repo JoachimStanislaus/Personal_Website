@@ -31,7 +31,12 @@ const ExperienceGrid = () => {
         { company: "UBS", role: "Frontend Developer", timeline: "Sept 24 - Present" },
         { company: "Hatless Studios", role: "Backend Developer", timeline: "Apr 23 - Aug 24" },
         { company: "UBS", role: "Frontend Developer Intern", timeline: "Jun 23 - Aug 23" },
-        { company: "SG Enable", role:"Data Analyst", timeline: "May 22 - Sept 22"},
+        { company: "SG Enable", role: "Data Analyst", timeline: "May 22 - Sept 22"},
+        { company: "Little Coder", role: "Coding Instructor", timeline: "May 22 - Jul 23"},
+        { company: "Create Lab", role: "Coding Instructor", timeline: "Apr 22 - Jun 23"},
+        { company: "The Logic Coders", role: "Coding Instructor", timeline: "Apr 22 - Sept 22"},
+        { company: "RoboRobo", role: "Coding Instructor", timeline: "Apr 22 - Sept 22"},
+        { company: "Shell", role: "Software Developer Intern", timeline: "Mar 19 - Aug 19"}
     ]);
 
     // Column Definitions: Defines the columns to be displayed.
