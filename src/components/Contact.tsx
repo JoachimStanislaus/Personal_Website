@@ -15,7 +15,7 @@ interface HeaderProps {
 
 export default function Contact({ color }: HeaderProps) {
     const linkedin = () => {
-        window.open("https:/www.linkedin.com/in/joachimstanislaus", "_blank", "noreferrer,noopener");
+        window.open("https://www.linkedin.com/in/joachimstanislaus", "_blank", "noreferrer,noopener");
     };
     const github = () => {
         window.open("https://www.github.com/JoachimStanislaus", "_blank", "noreferrer,noopener");
