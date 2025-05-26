@@ -2,6 +2,9 @@
 
 A personal website built with **React**, **TypeScript**, **Chakra UI**, and **ag-Grid**.
 
+Deployed on netlify.
+
+
 ---
 
 ## Getting Started
