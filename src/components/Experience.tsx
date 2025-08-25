@@ -28,9 +28,10 @@ const ExperienceGrid = () => {
 
     // Row Data: The data to be displayed.
     const [rowData, setRowData] = useState<ExperienceRow[]>([
-        { company: "UBS", role: "Frontend Developer", timeline: "Sept 24 - Present" },
+        { company: "UBS", role: "Quantitative Developer", timeline: "Aug 25 - Present" },
+        { company: "UBS", role: "Frontend Developer", timeline: "Sept 24 - Aug 25" },
         { company: "Hatless Studios", role: "Backend Developer", timeline: "Apr 23 - Aug 24" },
-        { company: "UBS", role: "Frontend Developer Intern", timeline: "Jun 23 - Aug 23" },
+        { company: "UBS", role: "Frontend Developer Intern", timeline: "Jun 23 - Sept 23" },
         { company: "SG Enable", role: "Data Analyst", timeline: "May 22 - Sept 22"},
         { company: "Little Coder", role: "Coding Instructor", timeline: "May 22 - Jul 23"},
         { company: "Create Lab", role: "Coding Instructor", timeline: "Apr 22 - Jun 23"},

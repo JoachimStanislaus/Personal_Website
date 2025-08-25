@@ -44,7 +44,7 @@ export function parseTimeline(timeline: string): string {
 
 function calculateFullTimeDifference(start: Date, end: Date): string {
     let years = end.getFullYear() - start.getFullYear();
-    let months = end.getMonth() - start.getMonth() + 1;
+    let months = end.getMonth() - start.getMonth();
     let days = end.getDate() - start.getDate();
     let hours = end.getHours() - start.getHours();
     let minutes = end.getMinutes() - start.getMinutes();
