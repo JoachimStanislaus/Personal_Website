@@ -52,7 +52,7 @@ export default function Header({ color }: HeaderProps) {
                     >
                         Hi, my name is Joachim <br />
                         <Text as={"span"} color={`${color}.400`}>
-                            I'm a software engineer
+                            I'm a Quantitative Developer
                         </Text>
                     </Heading>
                     <Text
